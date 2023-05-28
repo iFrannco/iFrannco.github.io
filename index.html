@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <style>
+      body {
+        background-color:#2C3333;
+        color:white;} 
+    </style>
+    
+  </head>
+  <body>
+    <span>dias sin molestar a octavio: </span>
+    <span id="dias">0</p>
+    
+      <script>
+        var fecha1 = new Date("05/26/2023");
+        var fecha2 = new Date();
+          
+        var diferencia = fecha2.getTime() - fecha1.getTime();
+          
+        var diferenciaEnDias = Math.floor(diferencia / (1000 * 3600 * 24));
+        
+        document.getElementById('dias').innerText = diferenciaEnDias;
+      </script>
+      
+  </body>
+</html>
